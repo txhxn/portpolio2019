@@ -1,0 +1,187 @@
+html, body, .home, .grid-container_1, .data{ height: 100%; margin: 0; }
+footer{height: 10%; margin:0;}
+.credit{height :130%;}
+a{text-decoration: none;}
+
+
+.home * { 
+/* border: 0px;*/
+ position: relative;
+}
+
+.home *:after { 
+ /*content:attr(class);*/
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 0.6fr 1.4fr 1.4fr 0.6fr;
+  grid-template-areas: "menu menu menu menu menu menu" "sd1 m1  m2  m3  m4  sd2" "sd1 m5  m6  m7  m8  sd2" "bottom bottom bottom bottom bottom bottom";
+  background-color: white;
+  font-size: 10px;
+  color: red;
+  font-family: 'Gothic A1', sans-serif;
+
+}
+
+/*.menu { grid-area: menu;text-align: right; border:0px;}*/
+/*.list {font-family:'Noto Sans',sans-serif; font-size: 20px; color: black; text-decoration: none; border:0px;}*/
+/*.list a{border:0px; color: rgb(225, 255, 0);}*/
+
+#m1  { grid-area: m1 ;border:2px solid white; 
+/*background-color: #f2f2f2; background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");*/
+background-image: linear-gradient(to right, rgb(246, 255, 179), rgb(231, 247, 109));
+}
+
+#m2  { grid-area: m2 ; border:2px solid white; 
+/*background-color: rgb(242,242,242); background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");*/
+background-image: linear-gradient(to right, rgb(240, 255, 122), rgb(232, 255, 61));
+}
+
+#m3  { grid-area: m3 ; border:2px solid white; 
+/*background-color: rgb(242,242,242); background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");*/
+background-image: linear-gradient(to right, rgb(234, 255, 77), rgb(228, 255, 25));
+
+}
+
+#m4  { grid-area: m4 ; border:2px solid white; 
+/*background-color: rgb(242,242,242); background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");*/
+background-image: linear-gradient(to right, rgb(231, 255, 48), rgb(196, 222, 0));
+
+}
+
+#m5  { grid-area: m5 ; border:2px solid white; 
+/*background-color: rgb(242,242,242); background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");*/
+background-image: linear-gradient(to right,rgb(246, 255, 179), rgb(231, 247, 109));
+
+}
+
+#m6  { grid-area: m6 ; border:2px solid white; 
+/*background-color: rgb(242,242,242); background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");*/
+background-image: linear-gradient(to right, rgb(240, 255, 122), rgb(232, 255, 61));
+
+}
+
+#m7  { grid-area: m7 ; border:2px solid white; 
+/*background-color: rgb(242,242,242); background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");*/
+background-image: linear-gradient(to right, rgb(234, 255, 77), rgb(228, 255, 25));
+
+}
+
+#m8  { grid-area: m8 ; border:2px solid white; 
+/*background-color: rgb(242,242,242); background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");*/
+background-image: linear-gradient(to right, rgb(231, 255, 48), rgb(196, 222, 0));
+
+}
+
+
+/*.m1:hover{background-color:#f2f2f2; background-image:url("https://www.transparenttextures.com/patterns/beige-paper.png");}
+.m2:hover{background-color:#f2f2f2; background-image:url("https://www.transparenttextures.com/patterns/beige-paper.png");}
+.m3:hover{background-color:#f2f2f2; background-image:url("https://www.transparenttextures.com/patterns/beige-paper.png");}
+.m4:hover{background-color:#f2f2f2; background-image:url("https://www.transparenttextures.com/patterns/beige-paper.png");}
+.m5:hover{background-color:#f2f2f2; background-image:url("https://www.transparenttextures.com/patterns/beige-paper.png");}
+.m6:hover{background-color:#f2f2f2; background-image:url("https://www.transparenttextures.com/patterns/beige-paper.png");}
+.m7:hover{background-color:#f2f2f2; background-image:url("https://www.transparenttextures.com/patterns/beige-paper.png");}
+.m8:hover{background-color:#f2f2f2; background-image:url("https://www.transparenttextures.com/patterns/beige-paper.png");}
+*/
+
+
+
+.bottom { grid-area: bottom; }
+
+.sd1 { grid-area: sd1;}
+
+.sd2 { grid-area: sd2; }
+
+
+/*.down {font-size: 12px; text-align: center; border: 1px solid black; font-family:'Gothic A1',sans-serif;
+   width: 200px; height:20px; top:50%;
+  margin: auto; padding-top:4px; border-radius: 30px; border-color: rgb(225, 255, 0); color: rgb(225, 255, 0);
+  animation: yourAnimation 2s infinite 0s linear;}
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0deg) scale(1) translateX(0px) translateY(0) skewX(0deg) skewY(0deg);
+        transform-origin: 0% 0%;
+        }
+    50%{
+        transform: rotate(0deg) scale(1) translateX(0px) translateY(+20%) skewX(0deg) skewY(0deg);
+        transform-origin: 0% 0%;
+        }
+    63%{
+        transform: rotate(0deg) scale(1) translateX(0px) translateY(0) skewX(0deg) skewY(0deg);
+        transform-origin: 0% 0%;
+        }
+    75%{
+        transform: rotate(0deg) scale(1) translateX(0px) translateY(+10%) skewX(0deg) skewY(0deg);
+        transform-origin: 0% 0%;
+        }
+    84%{
+        transform: rotate(0deg) scale(1) translateX(0px) translateY(0) skewX(0deg) skewY(0deg);
+        transform-origin: 0% 0%;
+        }
+    92%{
+        transform: rotate(0deg) scale(1) translateX(0px) translateY(+5%) skewX(0deg) skewY(0deg);
+        transform-origin: 0% 0%;
+        }
+    100%{
+        transform: rotate(0deg) scale(1) translateX(0px) translateY(0) skewX(0deg) skewY(0deg);
+        transform-origin: 0% 0%;
+        }
+}*/
+.grid-container_1 *{ 
+ border: 2px solid #00140e;
+ position: relative;
+}
+.cht_1:p{ border-color: #00140e;}
+.grid-container_1 *:after { 
+ /*content:attr(class);*/
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container_1 {
+  color:blue;
+  background-color: #00140e;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 0.6fr 1.4fr 1.4fr 0.6fr;
+  grid-template-areas: ". . . . . ." ". cht_1 cht_2 cht_3 cht_4 ." ". cht_5 cht_6 cht_7 cht_8 ." ". . . . . .";
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 8px;
+}
+
+.cht_1 { grid-area: cht_1; background-image: linear-gradient(to bottom right, rgb(255, 239, 166) 2%, rgb(255, 221, 59)98%); padding:8px;}
+.cht_1 p {border:0px;}
+.cht_2 { grid-area: cht_2; background-image: linear-gradient(145deg, rgb(255, 232, 122), rgb(255, 187, 0)); padding:8px;}
+.cht_2 p {border:0px;}
+.cht_3 { grid-area: cht_3; background-image: linear-gradient(to bottom right,rgb(255, 0, 238) 10% ,rgb(132, 0, 255)90% ); padding:8px;}
+.cht_3 p {border:0px;}
+.cht_4 { grid-area: cht_4; background-image: linear-gradient(to bottom left,rgb(255, 0, 238) ,rgb(132, 0, 255)); padding:8px;}
+.cht_4 p {border:0px;}
+.cht_5 { grid-area: cht_5; background-image: linear-gradient(150deg, rgb(255, 232, 122), rgb(255, 187, 0)); padding:8px;}
+.cht_5 p {border:0px;}
+.cht_6 { grid-area: cht_6; background-image: linear-gradient(to bottom right, rgb(255, 208, 79) , rgb(255, 160, 0) ); padding:8px;}
+.cht_6 p {border:0px;}
+.cht_7 { grid-area: cht_7; background-image:linear-gradient(to top right,rgb(255, 219, 120) 1% ,rgb(132, 0, 255)99%); padding:8px;}
+.cht_7 p {border:0px;}
+.cht_8 { grid-area: cht_8; background-image: linear-gradient(to top left, rgb(255, 0, 238) 10% ,rgb(132, 0, 255)90%); padding:8px;}
+.cht_8 p {border:0px;}
+
+
+.credit {
+  display: grid;
+  background-color: #00140e;
+  color:rgb(225,255,0);
+  text-align: center;
+}
+.creditC{margin-top: 20%; font-size: 13px; font-family: 'Gothic A1', sans-serif;
+}
+footer{height: 4%; background-color: #00140e; color:rgb(225,255,0); font-family: 'Gothic A1', sans-serif;
+}
+footer span:nth-child(1){margin-left: 20%; font-weight: bold; font-size: 13px;}
+footer span:nth-child(2){margin-left: 40%; font-weight: bold; font-size: 13px;}
